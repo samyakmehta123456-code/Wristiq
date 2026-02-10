@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point of Sale</title>
+    <meta name="description" content="Modern POS system for restaurants, clubs, and pubs with wristband integration for order notifications">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-text">POS</span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-page="dashboard">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+                <a href="#" class="nav-item" data-page="new-order">
+                    <span class="nav-icon">➕</span>
+                    <span class="nav-text">New Order</span>
+                </a>
+                <a href="#" class="nav-item" data-page="orders">
+                    <span class="nav-icon">📋</span>
+                    <span class="nav-text">Orders</span>
+                    <span class="nav-badge" id="active-orders-badge">0</span>
+                </a>
+                <a href="#" class="nav-item" data-page="kitchen">
+                    <span class="nav-icon">👨‍🍳</span>
+                    <span class="nav-text">Kitchen Display</span>
+                </a>
+                <a href="#" class="nav-item" data-page="menu">
+                    <span class="nav-icon">📖</span>
+                    <span class="nav-text">Menu Management</span>
+                </a>
+                <a href="#" class="nav-item" data-page="inventory">
+                    <span class="nav-icon">📦</span>
+                    <span class="nav-text">Inventory</span>
+                </a>
+                <a href="#" class="nav-item" data-page="customers">
+                    <span class="nav-icon">👥</span>
+                    <span class="nav-text">Customers</span>
+                </a>
+                <a href="#" class="nav-item" data-page="reports">
+                    <span class="nav-icon">📈</span>
+                    <span class="nav-text">Reports</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="bluetooth-status" id="bluetooth-status">
+                    <span class="status-dot disconnected"></span>
+                    <span class="status-text">Bluetooth Off</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menu-toggle">☰</button>
+                    <h1 class="page-title" id="page-title">Dashboard</h1>
+                </div>
+                <div class="header-right">
+                    <div class="header-time" id="header-time"></div>
+                    <button class="btn btn-icon" id="bluetooth-toggle" title="Toggle Bluetooth">
+                        <span class="bluetooth-icon">📶</span>
+                    </button>
+                    <button class="btn btn-icon" id="notifications-btn" title="Notifications">
+                        <span>🔔</span>
+                        <span class="notification-dot" id="notification-dot"></span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Page Container -->
+            <div class="page-container" id="page-container">
+                <!-- Pages will be loaded here dynamically -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal Container -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-title">Modal Title</h2>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/utils/storage.js"></script>
+    <script src="js/utils/helpers.js"></script>
+    <script src="js/services/bluetooth.js"></script>
+    <script src="js/services/data.js"></script>
+    <script src="js/pages/dashboard.js"></script>
+    <script src="js/pages/new-order.js"></script>
+    <script src="js/pages/orders.js"></script>
+    <script src="js/pages/kitchen.js"></script>
+    <script src="js/pages/menu.js"></script>
+    <script src="js/pages/inventory.js"></script>
+    <script src="js/pages/customers.js"></script>
+    <script src="js/pages/reports.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
