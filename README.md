@@ -1,16 +1,16 @@
-[Wristiq]
+#Wristiq
 
 Smart Restaurant POS with Bluetooth Wristband Notification System
 
 Wristiq is a smart restaurant POS system designed to simplify order management and improve customer experience. It integrates Bluetooth wristbands that notify customers through vibration when their order is ready.
 
-||Problem Statement||
+🚀Problem Statement
 
 ~In busy restaurants, customers often crowd around counters waiting for their orders. This creates confusion, noise, and inefficient workflow.
 
 ~Wristiq solves this by automatically notifying customers through a wearable wristband when their order is ready.
 
-||How It Works||
+💡How It Works
 
 ~Customer places an order at the counter.
 
@@ -24,7 +24,7 @@ Wristiq is a smart restaurant POS system designed to simplify order management a
 
 ~This reduces crowding and improves service efficiency.
 
-||Features||
+🔧Features
 
 ~Order management system
 
