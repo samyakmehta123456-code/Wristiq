@@ -1,35 +1,52 @@
-# MDP
+Wristiq
 
-This is the MDP project. Instructions to push to GitHub:
+Smart Restaurant POS with Bluetooth Wristband Notification System
 
-1. Install Git: https://git-scm.com/downloads
-2. (Optional) Install GitHub CLI: https://cli.github.com/
+Wristiq is a smart restaurant POS system designed to simplify order management and improve customer experience. It integrates Bluetooth wristbands that notify customers through vibration when their order is ready.
 
-Commands to run from the project root (PowerShell):
+🚀 Problem Statement
 
-```powershell
-# initialize repo if needed
-git init
+~In busy restaurants, customers often crowd around counters waiting for their orders. This creates confusion, noise, and inefficient workflow.
+~Wristiq solves this by automatically notifying customers through a wearable wristband when their order is ready.
 
-# stage files
-git add .
+💡 How It Works
 
-# commit
-git commit -m "Initial commit"
+~Customer places an order at the counter.
+~A Bluetooth wristband is assigned to the customer.
+~The POS system tracks the order in real time.
+~When the kitchen marks the order as Ready, the system sends a signal.
+~The assigned wristband vibrates to notify the customer.
+~This reduces crowding and improves service efficiency.
 
-# create remote (replace <your-repo-url>)
-git remote add origin <your-repo-url>
+🔧 Features
 
-git branch -M main
+~Order management system
+~Real-time order status tracking
+~Automatic billing calculation
+~Bluetooth wristband assignment
+~Vibration notification when order is ready
+~Session-based customer tracking
 
-# push
-git push -u origin main
-```
+🛠️ Technologies Used
 
-Or using GitHub CLI (after logging in):
+~HTML
+~Backend Logic (JavaScript)
+~Bluetooth communication
+~Storage handling
 
-```powershell
-gh repo create <username>/<repo-name> --public --source=. --remote=origin --push
-```
+🏗️ System Architecture
 
-If you want, install Git and tell me and I'll finish initialization and push for you (or provide the repo URL and I'll set the remote and push).
+POS Software → Order Processing → Status Update → Bluetooth Signal → Wristband Vibration
+
+🎯 Key Outcomes
+
+~Reduced waiting confusion
+~Improved workflow efficiency
+~Minimized manual calling of order numbers
+~Practical real-world implementation of software + hardware integration
+
+📌 Future Improvements
+
+~Mobile app integration
+~QR-based ordering
+~Payment gateway integration
